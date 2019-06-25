@@ -8,4 +8,12 @@
  <context:component-scan base-package="com.controller">
  
  </context:component-scan>
+ <context:component-scan base-package=" com.springapp.mvc, com.microsoft.applicationinsights.web.spring"/>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.microsoft.applicationinsights.web.spring.RequestNameHandlerInterceptorAdapter" />
+        </mvc:interceptor>
+    </mvc:interceptors>
 </beans>
