@@ -19,7 +19,7 @@ public class NumberController implements InitializingBean{
 		int num1=Integer.parseInt(request.getParameter("number1"));
 		int num2=Integer.parseInt(request.getParameter("number2"));
 		int result = num1 + num2;
-		System.out.println("Result is not calculated");
+		
 		ModelAndView modelAndView = new ModelAndView("Result.jsp", "Result", result);
 		modelAndView.addObject("TestObject", "Hello");
 		return modelAndView;
