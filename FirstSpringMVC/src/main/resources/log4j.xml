@@ -14,18 +14,19 @@
     <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n" />
     </layout>
   </appender>
-
-  <root>
-    <priority value ="debug"></priority>
-    <appender-ref ref="console"></appender>
-    <appender-ref ref="fileAppender"></appender>
-  </root>
- <appender name="aiAppender" 
+<appender name="aiAppender" 
          class="com.microsoft.applicationinsights.log4j.v1_2.ApplicationInsightsAppender">
         <param name="instrumentationKey" value="1da8b795-aef7-4cfa-b626-faf117c39cf1" />
     </appender>
-    <root>
+  <root>
+    <priority value ="debug"></priority>
+    <appender-ref ref="console"></appender-ref>
+    <appender-ref ref="fileAppender"></appender-ref>
+    <appender-ref ref="aiAppender"></appender-ref>
+  </root>
+ 
+   <!--  <root>
       <priority value ="trace" />
-      <appender-ref ref="aiAppender" />
-    </root>
+      <appender-ref ref="aiAppender"></appender-ref>
+    </root> -->
 </log4j:configuration>

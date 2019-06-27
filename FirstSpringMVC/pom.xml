@@ -35,6 +35,13 @@
     <version>3.0.1</version>
     <scope>provided</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/com.microsoft.azure/applicationinsights-logging-log4j2 -->
+<dependency>
+  <groupId>com.microsoft.azure</groupId>
+  <artifactId>applicationinsights-logging-log4j1_2</artifactId>
+  <version>1.0.6</version>
+</dependency>
+
   </dependencies>
   <build>
     <finalName>FirstSpringMVC</finalName>
