@@ -16,7 +16,7 @@
   </appender>
 <appender name="aiAppender" 
          class="com.microsoft.applicationinsights.log4j.v1_2.ApplicationInsightsAppender">
-        <param name="instrumentationKey" value="1da8b795-aef7-4cfa-b626-faf117c39cf1" />
+        <param name="instrumentationKey" value="3f94217b-efd1-4a9e-86df-7f3d9beb287d" />
     </appender>
   <root>
     <priority value ="debug"></priority>
